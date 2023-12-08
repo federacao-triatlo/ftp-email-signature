@@ -1,0 +1,379 @@
+<!--
+  Inline the CSS on https://htmlemail.io/inline/
+  which is powered by https://github.com/Automattic/juice
+-->
+
+<style type="text/css">
+  /* CSS Resets */
+
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+  */
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    font-size: 100%;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+
+  body {
+    line-height: 100%;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: middle;
+  }
+
+  /* Typography */
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #1f1f1f;
+    text-decoration: none !important;
+  }
+
+  .signature {
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+
+  .signature__cell {
+  }
+
+  .signature__cell--col1 {
+    text-align: center;
+  }
+
+  .signature__cell--col2 {
+    border-left-color: #1f1f1f;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding-left: 16px;
+  }
+
+  .signature__text {
+    color: #1e130f;
+    display: inline-block;
+  }
+
+  .signature__text--address,
+  .signature__text--phone,
+  .signature__text--divider {
+    font-size: 14px;
+    line-height: 48px;
+  }
+
+  .signature__text--divider {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .signature__text--name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+
+  .signature__text--area {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .signature__text--email {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .signature__text--contacts {
+    font-size: 14px;
+  }
+
+  .signature__text--socials {
+    font-size: 14px;
+    padding-top: 4px;
+  }
+
+  .signature__tagline {
+    color: #1e130f;
+    display: inline-block;
+  }
+
+  .signature__tagline--text,
+  .signature__tagline--divider {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .signature__tagline--text {
+    font-weight: 600;
+  }
+
+  .signature__tagline--divider {
+    padding-right: 16px;
+  }
+
+  .signature__links {
+    margin-right: 16px;
+  }
+
+  /* Images */
+
+  .signature__image {
+    background-image: url("../assets/e-mail-signature-asset-v01.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .signature__image--logo {
+    background-position: 0 0;
+    height: 96px;
+    line-height: 96px;
+    margin-right: 16px;
+    width: 252px;
+  }
+
+  .signature__image--web {
+    background-position: 0px -96px;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+  }
+
+  .signature__image--facebook {
+    background-position: -24px -96px;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+  }
+
+  .signature__image--instagram {
+    background-position: -48px -96px;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+  }
+
+  .signature__image--twitter {
+    background-position: -72px -96px;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+  }
+
+  .signature__image--youtube {
+    background-position: -96px -96px;
+    height: 24px;
+    line-height: 24px;
+    width: 32px;
+  }
+</style>
+
+<div class="signature">
+  <table>
+    <tbody>
+      <tr>
+        <td rowspan="3">
+          <a href="https://www.federacao-triatlo.pt/" target="_blank"><span class="signature__image signature__image--logo"></a></span>
+        </td>
+        <td class="signature__cell signature__cell--col2">
+          <span class="signature__text signature__text--name">{NOME}</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="signature__cell signature__cell--col2">
+          <span class="signature__text signature__text--area">{ÁREA}</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="signature__cell signature__cell--col2">
+          <span class="signature__text signature__text--email"
+            ><a href="mailto:e-mail@federacao-triatlo.pt"
+              >{nome.apelido}@federacao-triatlo.pt</a
+            ></span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="signature__cell signature__cell--col1">
+          <span class="signature__text signature__text--address"
+            ><a href="https://maps.app.goo.gl/9wRM4HPTZ7d3qaCr9"
+              >Alameda do Sabugueiro, 1B - 2760-128 Caxias - Portugal</a
+            ></span
+          >
+          <span class="signature__text signature__text--divider">|</span>
+          <span class="signature__text signature__text--phone"
+            ><a href="tel:+351214464820">+351 214 464 820</a></span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="signature__cell signature__cell--col1">
+          <a
+            href="https://www.facebook.com/triatloportugal"
+            target="_blank"
+            class="signature__links"
+          >
+            <span
+              class="sign signature__image signature__image--facebook"
+            ></span
+          ></a>
+          <a
+            href="https://www.instagram.com/fedtriatloportugal/"
+            target="_blank"
+            class="signature__links"
+          >
+            <span
+              class="sign signature__image signature__image--instagram"
+            ></span
+          ></a>
+          <a
+            href="https://twitter.com/triatloportugal/"
+            target="_blank"
+            class="signature__links"
+          >
+            <span
+              class="sign signature__image signature__image--twitter"
+            ></span
+          ></a>
+          <a
+            href="https://www.youtube.com/@federacaotriatloportugal"
+            target="_blank"
+            class="signature__links"
+          >
+            <span
+              class="sign signature__image signature__image--youtube"
+            ></span
+          ></a>
+          <span class="signature__tagline signature__tagline--divider">|</span>
+          <span class="signature__tagline signature__tagline--text">1984-2024 : 40 anos de Triatlo</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
